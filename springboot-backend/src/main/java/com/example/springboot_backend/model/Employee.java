@@ -12,13 +12,14 @@ public class Employee {
 
     @Column(name = "first_name")
     private String firstName;
+
     @Column(name = "last_name")
     private String lastName;
-    @Column(name ="email_id")
+
+    @Column(name = "email_id")
     private String emailId;
 
-    public Employee (){
-
+    public Employee() {
     }
 
     public Employee(String firstName, String lastName, String emailId) {
@@ -51,11 +52,11 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public String getEmail() {
+    public String getEmailId() {
         return emailId;
     }
 
-    public void setEmail(String emailId) {
+    public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
 }
